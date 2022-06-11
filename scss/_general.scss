@@ -11,7 +11,7 @@ html {
 body {
    margin: 0;
    padding: 0;
-   font-family: 'Arial', sans-serif;
+   font-family: 'Barlow', 'Arial', sans-serif;
    font-size: 16px;
 }
 
@@ -25,6 +25,11 @@ ul {
    list-style-type: none;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6 {
+   margin: 0;
+   font-family: 'Fraunces', 'Arial', sans-serif;
+}
+
+p {
    margin: 0;
 }

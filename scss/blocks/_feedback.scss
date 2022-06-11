@@ -1,0 +1,155 @@
+.feedback {
+   
+   margin-bottom: 357px;
+   
+   &__inner-container {
+   }
+   
+   &__container {
+      max-width: 1280px;
+      width: 100%;
+      background-color: #333D4B;
+      border-radius: 8px;
+      padding: 106px 370px 311px 370px;
+      position: relative;
+   }
+   
+   &__top {
+      max-width: 529px;
+      width: 100%;
+   }
+   
+   &__top-heading {
+      font-size: 40px;
+      line-height: 48px;
+      text-align: center;
+      color: #FEFCF7;
+      margin-bottom: 32px;
+   }
+   
+   &__top-text {
+      font-size: 16px;
+      line-height: 26px;
+      text-align: center;
+      color: #FEFCF7;
+      opacity: 0.8;
+   }
+   
+   &__list {
+      max-width: 1110px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      top: 352px;
+      left: 50%;
+      transform: translateX(-50%);
+   }
+   
+   &__item {
+      max-width: 350px;
+      width: 100%;
+      background-color: #0E8784;
+      border-radius: 8px;
+      padding: 200px 48px 48px 48px;
+   }
+
+   &__item:not(:last-child) {
+      margin-right: 10px;
+   }
+   
+   &__item::before {
+      content: "";
+      display: inline-block;
+      width: 71px;
+      height: 72px;
+      background-image: url("./../../images/coffee-shape.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center; 
+      position: absolute;
+      top: 72px;
+      left: 136px;
+   }
+   
+   &__item:nth-child(2)::before {
+      background-image: url("./../../images/gift-shape.svg");
+   }
+   
+   &__item:nth-child(3)::before {
+      background-image: url("./../../images/combined-shape.svg");
+   }
+   
+   &__item-title {
+      font-size: 24px;
+      line-height: 32px;
+      text-align: center;
+      color: #FEFCF7;
+      margin-bottom: 24px;
+   }
+   
+   &__item-subtitle {
+      font-size: 16px;
+      line-height: 26px;
+      text-align: center;
+      color: #FEFCF7;
+   }
+}
+
+@media only screen and (max-width: 768px) {
+   .feedback {
+
+      margin-bottom: 434px;
+      
+      &__inner-container {
+      }
+      
+      &__container {
+         max-width: 688px;
+         width: 100%;
+         padding: 56px 74px 368px 74px;
+      }
+      
+      &__top {
+         max-width: 540px;
+         width: 100%;
+      }
+      
+      &__top-heading {
+      }
+      
+      &__top-text {
+      }
+      
+      &__list {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         top: 275px;
+      }
+      
+      &__item {
+         max-width: 573px;
+         width: 100%;
+         margin-bottom: 24px;
+         padding: 41px 48px 41px 181px;
+      }
+
+      &__text-wrapper {
+         max-width: 344px;
+         width: 100%;
+      }
+      
+      &__item-title {
+         text-align: left;
+         font-size: 24px;
+         line-height: 32px;
+         margin-bottom: 16px;
+      }
+      
+      &__item-subtitle {
+         text-align: left;
+      
+      }
+   }
+}

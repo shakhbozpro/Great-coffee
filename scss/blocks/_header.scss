@@ -1,0 +1,36 @@
+.header {
+
+   padding: 44px 0;
+
+   &__container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+}
+
+.nav {
+
+   &__list {
+      display: flex;
+      align-items: center;
+   }
+
+   &__item {
+      margin-left: 32px;
+   }
+
+   &__item-link {
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 15px;
+      letter-spacing: 0.923077px;
+      text-transform: uppercase;
+      color: #83888F;
+      text-decoration: none;
+   }
+
+   &__item-link:hover {
+      color: #333D4B;
+   }
+}
